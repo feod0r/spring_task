@@ -1,7 +1,6 @@
 package com.example.alphabank.network;
 
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
 
 public class ExRate {
@@ -16,7 +15,11 @@ public class ExRate {
         this.license = license;
         this.timestamp = timestamp;
         this.base = base;
-        this.rates = rates;
+        if(rates != null){
+            this.rates = rates;
+        } else {
+            this.rates = new HashMap<String,Float>();
+        }
     }
 
     public String getDisclaimer() {

@@ -43,7 +43,7 @@ public class CurrencyController {
 
     @RequestMapping("/realValue/{coin}")
     public String realAct(@PathVariable String coin){
-        ExRate response = currency.getActual(apiKey,base);
+         ExRate response = currency.getActual(apiKey,base);
 
         return String.valueOf(currencyFromMap(response.getRates(),coin));
     }

@@ -24,7 +24,7 @@
 
 ## Nice to Have
 
-* ⏳Сборка и запуск Docker контейнера с этим сервисом
+* ✅Сборка и запуск Docker контейнера с этим сервисом
 	
 # Работа программы: 
 
@@ -89,3 +89,12 @@ Gradle в это время загрузит все библиотеки, ско
         │                   └── Giphy.java
         └── resources
             └── application.properties
+
+# Docker
+
+Dockerfile уже присутствует, проект нужно лишь собрать предварительно. 
+
+	docker build .
+	docker run -p 8080:8080 {container number}
+	
+![запуск докера](img/imgDocker.png)

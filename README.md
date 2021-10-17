@@ -64,3 +64,28 @@ Gradle в это время загрузит все библиотеки, ско
 ![вывод в консоль](img/imgConsole.png)
 
 Сервис запущен на порту 8080. 
+
+# Карта эндпоинтов
+
+	/currency/oldValue/{coin}
+	/currency/realValue/{coin}
+	/giphy/{coin}
+	
+# Файловая структура проекта
+
+	src
+    └── main
+        ├── java
+        │   └── com
+        │       └── example
+        │           └── alphabank
+        │               ├── AlphabankApplication.java
+        │               ├── CurrencyController.java
+        │               ├── GiphyController.java
+        │               └── network
+        │                   ├── Currency.java
+        │                   ├── ExRate.java
+        │                   ├── GiphyData.java
+        │                   └── Giphy.java
+        └── resources
+            └── application.properties
